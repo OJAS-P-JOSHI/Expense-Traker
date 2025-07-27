@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "build": "mkdir build && xcopy src build /E /I /Y"
+    "build": "mkdir -p build && cp -r src/* build/"
+
   },
   "keywords": [],
   "type": "module",
